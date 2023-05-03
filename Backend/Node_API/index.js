@@ -5,6 +5,7 @@ app.get("/",(req,res)=>{
     res.send("home")
 })
 require("./src/route/customer.route")(app)
+require("./src/route/category.route")(app)
 
 app.listen(8080,()=>{
     console.log("http://localhost:8080")
